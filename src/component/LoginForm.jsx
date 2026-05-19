@@ -1,4 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+const[email, setEmail]= useState("");
+const[password, setPassword] = useState("");
+const handleSubmit =(e) =>{
+  e.preventDefault();;
+  alert("Login Successfully")
+};
 
 const LoginForm = () => {
   return (
@@ -8,10 +15,16 @@ const LoginForm = () => {
         <h2>Email</h2>
         <input type="email" 
                 placeholder='enter your name'
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
+                required
                 className='px-3'/>
         <h2>Password</h2>
         <input type="password"
                placeholder='enter password'
+               value={password}
+               onChange={(e)=>setEmail(e.target.value)}
+               required
                className='px-3' />
         
         <button className='px-3 py-2 border-2 rounded-full hover:bg-sky-200'>login</button>
