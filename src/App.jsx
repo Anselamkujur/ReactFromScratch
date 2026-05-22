@@ -5,6 +5,7 @@ const App = () => {
   return (
     <div>
       <Hello name="Anselam"/>
+      <Hello name="Adarsh"/>
     </div>
   )
 }
