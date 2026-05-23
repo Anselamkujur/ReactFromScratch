@@ -2,7 +2,8 @@ import React from 'react'
 
 const Hello = (props) => {
   return (
-    <div>Hello {props.name}</div>
+    <div>{props.msg}{props.name}
+    </div>
   )
 }
 
